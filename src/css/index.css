@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+i.icon {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  display: inline-block; }
+  i.icon.icon-search {
+    mask: url("../../img/icons/search.svg") no-repeat center/contain;
+    -webkit-mask: url("../../img/icons/search.svg") no-repeat center/contain; }
+  i.icon.icon-arrow-right {
+    mask: url("../../img/icons/arrow-right.svg") no-repeat center/contain;
+    -webkit-mask: url("../../img/icons/arrow-right.svg") no-repeat center/contain; }
+  i.icon.icon-phone {
+    mask: url("../../img/icons/phone.svg") no-repeat center/contain;
+    -webkit-mask: url("../../img/icons/phone.svg") no-repeat center/contain; }
+  i.icon.icon-facebook {
+    mask: url("../../img/icons/facebook.svg") no-repeat center/contain;
+    -webkit-mask: url("../../img/icons/facebook.svg") no-repeat center/contain; }
+  i.icon.icon-twitter {
+    mask: url("../../img/icons/twitter.svg") no-repeat center/contain;
+    -webkit-mask: url("../../img/icons/twitter.svg") no-repeat center/contain; }
+  i.icon.icon-youtube {
+    mask: url("../../img/icons/youtube.svg") no-repeat center/contain;
+    -webkit-mask: url("../../img/icons/youtube.svg") no-repeat center/contain; }
+  i.icon.icon-instagram {
+    mask: url("../../img/icons/instagram.svg") no-repeat center/contain;
+    -webkit-mask: url("../../img/icons/instagram.svg") no-repeat center/contain; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif; }
+
+.hamburger {
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative; }
+
+.active-nav {
+  color: #3056d3; }
+
+.active-filters {
+  color: #ffffff;
+  background-color: #3056d3; }
+
+/* CSS style for the animation */
+.card {
+  transition: transform 1s ease-in-out; }
+
+.cards.animate-cards .card {
+  opacity: 0;
+  transform: translateX(-50%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

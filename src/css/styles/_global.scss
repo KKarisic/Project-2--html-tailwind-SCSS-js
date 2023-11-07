@@ -1,0 +1,69 @@
+@import './general/variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+// Screen sizes
+@mixin sm-down {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin sm-up {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin md-up {
+  @media (min-width: 1110px) {
+    @content;
+  }
+}
+@mixin md-down {
+  @media (max-width: 1109px) {
+    @content;
+  }
+}
+
+@mixin lg-up {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.hamburger {
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+.active-nav {
+  color: $blue;
+}
+.active-filters {
+  color: $white;
+  background-color: $blue;
+}
+/* CSS style for the animation */
+// .cards {
+//   transition: transform 1s ease-in-out;
+// }
+
+// .cards.animate-cards {
+//   transform: translateX(-50%);
+// }
+
+.card {
+  transition: transform 1s ease-in-out;
+}
+.cards.animate-cards .card {
+  opacity: 0;
+  transform: translateX(-50%);
+}

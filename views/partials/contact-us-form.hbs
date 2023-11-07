@@ -1,0 +1,68 @@
+<section class='contact-us-form bg-backgroundGrey'>
+  <div class='container mx-auto px-5'>
+    <div class='py-32'>
+
+      <div class='w-full sm:w-10/12 md:w-9/12 lg:w-5/12 text-center mx-auto'>
+        <p class='text-textBlue font-semibold text-lg'>Contact Us</p>
+        <h2 class='text-darkGrey font-bold text-4xl'>How Can We Help You?</h2>
+        <p class='text-textLightGrey text-base my-3'>There are many variations of passages of Lorem Ipsum available but
+          the majority have suffered alteration in some form.</p>
+      </div>
+
+      <form class='mt-16'>
+        <div class='lg:flex gap-8'>
+          <div class='mb-10 lg:mb-4 w-full'>
+            <label for='name' class='block text-base text-darkerGrey font-semibold'>Your Name
+              <span class='text-red'>*</span></label>
+            <input
+              type='text'
+              id='name'
+              name='name'
+              class='form-input mt-3 py-3 border border-border rounded block w-full'
+            />
+          </div>
+          <div class='mb-10 lg:mb-4 w-full'>
+            <label for='email' class='block text-base text-darkerGrey font-semibold'>Your Email
+              <span class='text-red'>*</span></label>
+            <input
+              type='email'
+              id='email'
+              name='email'
+              class='form-input mt-3 py-3 border border-border rounded block w-full'
+            />
+          </div>
+        </div>
+
+        <div class='my-4'>
+          <label for='message' class='block text-base text-darkerGrey font-semibold'>Message
+            <span class='text-red'>*</span></label>
+          <textarea
+            id='message'
+            name='message'
+            rows='6'
+            class='form-textarea mt-3 border border-border rounded block w-full'
+          ></textarea>
+        </div>
+
+        <div class='flex items-center mt-9 mb-16'>
+          <input
+            type='checkbox'
+            id='checkboxField'
+            name='checkboxField'
+            class='form-checkbox h-3 w-3 text-indigo-600 transition duration-150 ease-in-out'
+          />
+          <label for='checkboxField' class='ml-2 text-sm text-textLightGrey'>I agree that my submitted data is being
+            collected and stored.</label>
+        </div>
+
+        <div class='lg:flex lg:justify-center'>
+          <button
+            type='submit'
+            class='bg-textBlue w-full text-sm text-textWhite py-4 px-30 rounded lg:w-4/12 xl:w-3/12 hover:bg-lightBlue'
+          >Send Message</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>

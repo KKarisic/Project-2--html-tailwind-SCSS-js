@@ -1,0 +1,40 @@
+// $iconColor: #000000;
+
+i.icon {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  display: inline-block;
+  // background: black;
+
+  &.icon-search {
+    mask: url('../../img/icons/search.svg') no-repeat center / contain;
+    -webkit-mask: url('../../img/icons/search.svg') no-repeat center / contain;
+  }
+  &.icon-arrow-right {
+    mask: url('../../img/icons/arrow-right.svg') no-repeat center / contain;
+    -webkit-mask: url('../../img/icons/arrow-right.svg') no-repeat center / contain;
+  }
+  &.icon-phone {
+    mask: url('../../img/icons/phone.svg') no-repeat center / contain;
+    -webkit-mask: url('../../img/icons/phone.svg') no-repeat center / contain;
+  }
+  &.icon-facebook {
+    mask: url('../../img/icons/facebook.svg') no-repeat center / contain;
+    -webkit-mask: url('../../img/icons/facebook.svg') no-repeat center / contain;
+  }
+  &.icon-twitter {
+    mask: url('../../img/icons/twitter.svg') no-repeat center / contain;
+    -webkit-mask: url('../../img/icons/twitter.svg') no-repeat center / contain;
+  }
+  &.icon-youtube {
+    mask: url('../../img/icons/youtube.svg') no-repeat center / contain;
+    -webkit-mask: url('../../img/icons/youtube.svg') no-repeat center / contain;
+  }
+  &.icon-instagram {
+    mask: url('../../img/icons/instagram.svg') no-repeat center / contain;
+    -webkit-mask: url('../../img/icons/instagram.svg') no-repeat center / contain;
+  }
+}

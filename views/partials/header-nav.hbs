@@ -1,0 +1,51 @@
+<header class='sticky top-0 z-20 bg-darkBlue py-6 lg:py-8'>
+  <div class='relative'>
+    {{! in order to have sticky position on header and relative because mobile menu }}
+    <div class='container mx-auto px-5'>
+      <div class='flex items-center justify-between'>
+        <div class='pt-2'>
+          <img src='./img/asioso-logo-white.svg' alt='This is logo' />
+        </div>
+
+        <nav class='nav hidden lg:flex gap-12 text-textWhite'>
+
+          <a href='#home' class='nav-field hover:text-textBlue hover:no-underline'>Home</a>
+          <a href='#about-us' class='nav-field hover:text-textBlue hover:no-underline'>About Us</a>
+          <a href='#services' class='nav-field hover:text-textBlue hover:no-underline'>Services</a>
+          <a href='#blog' class='nav-field hover:text-textBlue hover:no-underline'>Blog</a>
+          <a href='#contact' class='nav-field hover:text-textBlue hover:no-underline'>Contact</a>
+        </nav>
+
+        <div class='relative hidden lg:block'>
+          <input
+            class='placeholder:text-textGrey block bg-transparent text-textWhite w-full border border-textGrey rounded-3xl py-2 pl-9 pr-3 focus:outline-none focus:border-textGreySearch'
+            placeholder='Search here...'
+            type='text'
+            name='search'
+          />
+          <span class='search absolute top-3 right-3 text-textGrey'>
+            <i class='icon icon-search bg-textWhite w-5 h-5'></i>
+          </span>
+        </div>
+
+        <button id='menu-btn' class='block hamburger lg:hidden focus:outline-none'>
+          <div><img src='./img/hamburger.png' alt='hamburger' /></div>
+        </button>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class='lg:hidden'>
+      <div
+        id='menu'
+        class='nav-show absolute left-0 hidden flex-col items-center py-8 gap-6 font-bold bg-textWhite w-full drop-shadow-md'
+      >
+        <a href='#home' class='nav-field hover:text-textBlue hover:no-underline'>Home</a>
+        <a href='#about-us' class='nav-field hover:text-textBlue hover:no-underline'>About Us</a>
+        <a href='#services' class='nav-field hover:text-textBlue hover:no-underline'>Services</a>
+        <a href='#blog' class='nav-field hover:text-textBlue hover:no-underline'>Blog</a>
+        <a href='#contact' class='nav-field hover:text-textBlue hover:no-underline'>Contact</a>
+      </div>
+    </div>
+
+  </div>
+</header>

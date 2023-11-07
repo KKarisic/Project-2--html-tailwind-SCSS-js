@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class='sticky top-0 z-20 bg-darkBlue py-6 lg:py-8'>
+    <div class='relative'>
+      <div class='container mx-auto px-5'>
+        <div class='flex items-center justify-between'>
+          <div class='pt-2'>
+            <img src='./img/asioso-logo-white.svg' alt='This is logo' />
+          </div>
+  
+          <nav class='nav hidden lg:flex gap-12 text-textWhite'>
+  
+            <a href='#home' class='nav-field hover:text-textBlue hover:no-underline'>Home</a>
+            <a href='#about-us' class='nav-field hover:text-textBlue hover:no-underline'>About Us</a>
+            <a href='#services' class='nav-field hover:text-textBlue hover:no-underline'>Services</a>
+            <a href='#blog' class='nav-field hover:text-textBlue hover:no-underline'>Blog</a>
+            <a href='#contact' class='nav-field hover:text-textBlue hover:no-underline'>Contact</a>
+          </nav>
+  
+          <div class='relative hidden lg:block'>
+            <input
+              class='placeholder:text-textGrey block bg-transparent text-textWhite w-full border border-textGrey rounded-3xl py-2 pl-9 pr-3 focus:outline-none focus:border-textGreySearch'
+              placeholder='Search here...'
+              type='text'
+              name='search'
+            />
+            <span class='search absolute top-3 right-3 text-textGrey'>
+              <i class='icon icon-search bg-textWhite w-5 h-5'></i>
+            </span>
+          </div>
+  
+          <button id='menu-btn' class='block hamburger lg:hidden focus:outline-none'>
+            <div><img src='./img/hamburger.png' alt='hamburger' /></div>
+          </button>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class='lg:hidden'>
+        <div
+          id='menu'
+          class='nav-show absolute left-0 hidden flex-col items-center py-8 gap-6 font-bold bg-textWhite w-full drop-shadow-md'
+        >
+          <a href='#home' class='nav-field hover:text-textBlue hover:no-underline'>Home</a>
+          <a href='#about-us' class='nav-field hover:text-textBlue hover:no-underline'>About Us</a>
+          <a href='#services' class='nav-field hover:text-textBlue hover:no-underline'>Services</a>
+          <a href='#blog' class='nav-field hover:text-textBlue hover:no-underline'>Blog</a>
+          <a href='#contact' class='nav-field hover:text-textBlue hover:no-underline'>Contact</a>
+        </div>
+      </div>
+  
+    </div>
+  </header>
+<h1>about</h1>
+
+<footer>
+  <div class='container mx-auto px-5'>
+    <div class='mt-24 mb-72 md:relative flex flex-col gap-10 lg:flex-row lg:gap-2'>
+
+      <div class='flex flex-col gap-5 lg:w-2/6 lg:pr-6'>
+        <img class='w-4/12' src='./img/logo_positive.svg' alt='logo' />
+        <p class='text-sm text-textLightGrey hover:text-textBlue w-9/12 lg:w-full'>Sed ut perspiciatis undmnis is iste
+          natus error sit amet voluptatem totam rem aperiam.
+        </p>
+        <p class='text-sm text-darkGrey font-semibold flex'>
+          <i class='icon icon-phone text-base bg-textBlue w-5 h-5'></i>
+          &nbsp; +012 (345) 678 99</p>
+      </div>
+
+      <div class='flex flex-col gap-3 lg:w-1/6'>
+        <p class='text-lg font-semibold text-darkerGrey mb-6'>Resources</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Saas Development</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Our Products</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Our Products</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>User Strategy</p>
+      </div>
+
+      <div class='flex flex-col gap-3 lg:w-1/6'>
+        <p class='text-lg font-semibold text-arkerGrey mb-6'>Company</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>About Landio</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Contact &amp; Support</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Success History</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Setting &amp; Privacy</p>
+      </div>
+
+      <div class='flex flex-col gap-3 lg:w-1/6'>
+        <p class='text-lg font-semibold text-darkerGrey mb-6'>Quick Links</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Premium Support</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Our Services</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Know Our Team</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Download App</p>
+      </div>
+
+      <div class='flex flex-col gap-3 lg:w-1/6'>
+        <p class='text-lg font-semibold text-darkerGrey mb-6'>Follow Us On</p>
+        <div class='icons'>
+          <i class='icon icon-facebook text-base bg-textBlue w-6 h-6 cursor-pointer hover:bg-textLightGrey'></i>
+          <i
+            class='icon icon-twitter text-base bg-darkGrey text-icons w-6 h-6 cursor-pointer hover:bg-textLightGrey'
+          ></i>
+          <i class='icon icon-youtube text-base bg-darkGrey w-6 h-6 cursor-pointer hover:bg-textLightGrey'></i>
+          <i class='icon icon-instagram text-base bg-darkGrey w-6 h-6 cursor-pointer hover:bg-textLightGrey'></i>
+
+        </div>
+        <p class='text-sm text-textLightGrey'>© <span class="footer-date">2024</span> TailGrids.</p>
+      </div>
+
+      <img
+        src='./img/EllipseFooter.svg'
+        alt='elipse'
+        class='hidden md:block md:absolute md:bottom-[-150px] md:left-[-250px] md:h-[350px] md:w-[350px]'
+      />
+
+    </div>
+  </div>
+</footer>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>

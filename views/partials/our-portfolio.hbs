@@ -1,0 +1,147 @@
+<section id='blog' class='about-our-app'>
+  <div class='container mx-auto px-5'>
+
+    <div class='my-48 flex flex-col md:block'>
+
+      <div class='w-full sm:w-10/12 md:w-9/12 lg:w-5/12 text-center mx-auto'>
+        <p class='text-textBlue font-semibold text-lg'>Our Portfolio</p>
+        <h2 class='text-darkGrey font-bold text-4xl my-3'>Our Recent Projects</h2>
+        <p class='text-textLightGrey text-base my-2 lg:my-4'>There are many variations of passages of Lorem Ipsum
+          available but the majority have suffered alteration in some form.</p>
+      </div>
+
+      <div class='filter-buttons my-14 flex md:justify-center overflow-x-scroll md:overflow-visible'>
+        <button
+          id='all-projects'
+          class='text-textLightGrey font-semibold text-text-base py-3 px-9 rounded-lg hover:text-textWhite hover:bg-textBlue'
+          data-id='all'
+        >All Projects</button>
+        <button
+          class='filters text-textLightGrey font-semibold text-text-base py-3 px-9 rounded-lg hover:text-textWhite hover:bg-textBlue'
+          data-id='branding'
+        >Branding</button>
+        <button
+          class='filters text-textLightGrey font-semibold text-text-base py-3 px-9 rounded-lg hover:text-textWhite hover:bg-textBlue'
+          data-id='design'
+        >Design</button>
+        <button
+          class='filters text-textLightGrey font-semibold text-text-base py-3 px-9 rounded-lg hover:text-textWhite hover:bg-textBlue'
+          data-id='marketing'
+        >Marketing</button>
+        <button
+          data-id='development'
+          class='filters text-textLightGrey font-semibold text-text-base py-3 px-9 rounded-lg hover:text-textWhite hover:bg-textBlue'
+        >Development</button>
+      </div>
+
+      <div
+        class='cards projects-container flex flex-col gap-y-10 md:grid md:grid-rows-3 md:grid-cols-2 md:gap-x-7 md:gap-y-12 lg:grid-rows-2 lg:grid-cols-3 lg:gap-x-7'
+      >
+
+        {{! <div class='card items-center max-h-full flex flex-col rounded-md cursor-pointer duration-500 hover:scale-105'>
+          <div class='h-80 w-full'>
+            <img class='rounded-md h-full w-full object-cover' src='./img/RecentPic1.png' alt='' />
+          </div>
+          <div
+            class='flex flex-col justify-between items-center h-3/6 gap-2 py-5 px-2.5 w-9/12 md:w-11/12 lg:w-11/12 mt-[-18%] md:mt-[-25%] bg-textWhite drop-shadow-md rounded-md md:px-2 lg:py-9 lg:px-10'
+          >
+            <p class='text-textBlue font-semibold text-sm'>Branding</p>
+            <p class='text-darkerGrey font-bold text-xl text-center mb-3'>Branding Design</p>
+            <button
+              class='text-textLightGrey font-medium text-sm py-3 px-7 rounded-md border text-center border-border hover:text-textWhite hover:bg-textBlue hover:border-textBlue'
+              href='#'
+              alt='View Details'
+            >View Details</button>
+          </div>
+        </div>
+
+        <div class='card items-center max-h-full flex flex-col rounded-md cursor-pointer duration-500 hover:scale-105'>
+          <div class='h-80 w-full'>
+            <img class='rounded-md h-full w-full object-cover' src='./img/RecentPic1.png' alt='' />
+          </div>
+          <div
+            class='flex flex-col justify-between items-center h-3/6 gap-2 py-5 px-2.5 w-9/12 md:w-11/12 lg:w-11/12 mt-[-18%] md:mt-[-25%] bg-textWhite drop-shadow-md rounded-md md:px-2 lg:py-9 lg:px-10'
+          >
+            <p class='text-textBlue font-semibold text-sm'>Branding</p>
+            <p class='text-darkerGrey font-bold text-xl text-center mb-3'>Branding Design</p>
+            <button
+              class='text-textLightGrey font-medium text-sm py-3 px-7 rounded-md border text-center border-border hover:text-textWhite hover:bg-textBlue hover:border-textBlue'
+              href='#'
+              alt='View Details'
+            >View Details</button>
+          </div>
+        </div>
+
+        <div class='card items-center max-h-full flex flex-col rounded-md cursor-pointer duration-500 hover:scale-105'>
+          <div class='h-80 w-full'>
+            <img class='rounded-md h-full w-full object-cover' src='./img/RecentPic1.png' alt='' />
+          </div>
+          <div
+            class='flex flex-col justify-between items-center h-3/6 gap-2 py-5 px-2.5 w-9/12 md:w-11/12 lg:w-11/12 mt-[-18%] md:mt-[-25%] bg-textWhite drop-shadow-md rounded-md md:px-2 lg:py-9 lg:px-10'
+          >
+            <p class='text-textBlue font-semibold text-sm'>Branding</p>
+            <p class='text-darkerGrey font-bold text-xl text-center mb-3'>Branding Design</p>
+            <button
+              class='text-textLightGrey font-medium text-sm py-3 px-7 rounded-md border text-center border-border hover:text-textWhite hover:bg-textBlue hover:border-textBlue'
+              href='#'
+              alt='View Details'
+            >View Details</button>
+          </div>
+        </div>
+
+        <div class='card items-center max-h-full flex flex-col rounded-md cursor-pointer duration-500 hover:scale-105'>
+          <div class='h-80 w-full'>
+            <img class='rounded-md h-full w-full object-cover' src='./img/RecentPic1.png' alt='' />
+          </div>
+          <div
+            class='flex flex-col justify-between items-center h-3/6 gap-2 py-5 px-2.5 w-9/12 md:w-11/12 lg:w-11/12 mt-[-18%] md:mt-[-25%] bg-textWhite drop-shadow-md rounded-md md:px-2 lg:py-9 lg:px-10'
+          >
+            <p class='text-textBlue font-semibold text-sm'>Branding</p>
+            <p class='text-darkerGrey font-bold text-xl text-center mb-3'>Branding Design</p>
+            <button
+              class='text-textLightGrey font-medium text-sm py-3 px-7 rounded-md border text-center border-border hover:text-textWhite hover:bg-textBlue hover:border-textBlue'
+              href='#'
+              alt='View Details'
+            >View Details</button>
+          </div>
+        </div>
+
+        <div class='card items-center max-h-full flex flex-col rounded-md cursor-pointer duration-500 hover:scale-105'>
+          <div class='h-80 w-full'>
+            <img class='rounded-md h-full w-full object-cover' src='./img/RecentPic1.png' alt='' />
+          </div>
+          <div
+            class='flex flex-col justify-between items-center h-3/6 gap-2 py-5 px-2.5 w-9/12 md:w-11/12 lg:w-11/12 mt-[-18%] md:mt-[-25%] bg-textWhite drop-shadow-md rounded-md md:px-2 lg:py-9 lg:px-10'
+          >
+            <p class='text-textBlue font-semibold text-sm'>Branding</p>
+            <p class='text-darkerGrey font-bold text-xl text-center mb-3'>Branding Design</p>
+            <button
+              class='text-textLightGrey font-medium text-sm py-3 px-7 rounded-md border text-center border-border hover:text-textWhite hover:bg-textBlue hover:border-textBlue'
+              href='#'
+              alt='View Details'
+            >View Details</button>
+          </div>
+        </div>
+
+        <div class='card items-center max-h-full flex flex-col rounded-md cursor-pointer duration-500 hover:scale-105'>
+          <div class='h-80 w-full'>
+            <img class='rounded-md h-full w-full object-cover' src='./img/RecentPic1.png' alt='' />
+          </div>
+          <div
+            class='flex flex-col justify-between items-center h-3/6 gap-2 py-5 px-2.5 w-9/12 md:w-11/12 lg:w-11/12 mt-[-18%] md:mt-[-25%] bg-textWhite drop-shadow-md rounded-md md:px-2 lg:py-9 lg:px-10'
+          >
+            <p class='text-textBlue font-semibold text-sm'>Branding</p>
+            <p class='text-darkerGrey font-bold text-xl text-center mb-3'>Branding Design</p>
+            <button
+              class='text-textLightGrey font-medium text-sm py-3 px-7 rounded-md border text-center border-border hover:text-textWhite hover:bg-textBlue hover:border-textBlue'
+              href='#'
+              alt='View Details'
+            >View Details</button>
+          </div>
+        </div> }}
+
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+@import './styles/a.tailwind.scss';
+@import './styles/icons.scss';
+@import './styles/global.scss';
+@import './styles/general/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

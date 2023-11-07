@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class='sticky top-0 z-20 bg-darkBlue py-6 lg:py-8'>
+    <div class='relative'>
+      <div class='container mx-auto px-5'>
+        <div class='flex items-center justify-between'>
+          <div class='pt-2'>
+            <img src='./img/asioso-logo-white.svg' alt='This is logo' />
+          </div>
+  
+          <nav class='nav hidden lg:flex gap-12 text-textWhite'>
+  
+            <a href='#home' class='nav-field hover:text-textBlue hover:no-underline'>Home</a>
+            <a href='#about-us' class='nav-field hover:text-textBlue hover:no-underline'>About Us</a>
+            <a href='#services' class='nav-field hover:text-textBlue hover:no-underline'>Services</a>
+            <a href='#blog' class='nav-field hover:text-textBlue hover:no-underline'>Blog</a>
+            <a href='#contact' class='nav-field hover:text-textBlue hover:no-underline'>Contact</a>
+          </nav>
+  
+          <div class='relative hidden lg:block'>
+            <input
+              class='placeholder:text-textGrey block bg-transparent text-textWhite w-full border border-textGrey rounded-3xl py-2 pl-9 pr-3 focus:outline-none focus:border-textGreySearch'
+              placeholder='Search here...'
+              type='text'
+              name='search'
+            />
+            <span class='search absolute top-3 right-3 text-textGrey'>
+              <i class='icon icon-search bg-textWhite w-5 h-5'></i>
+            </span>
+          </div>
+  
+          <button id='menu-btn' class='block hamburger lg:hidden focus:outline-none'>
+            <div><img src='./img/hamburger.png' alt='hamburger' /></div>
+          </button>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class='lg:hidden'>
+        <div
+          id='menu'
+          class='nav-show absolute left-0 hidden flex-col items-center py-8 gap-6 font-bold bg-textWhite w-full drop-shadow-md'
+        >
+          <a href='#home' class='nav-field hover:text-textBlue hover:no-underline'>Home</a>
+          <a href='#about-us' class='nav-field hover:text-textBlue hover:no-underline'>About Us</a>
+          <a href='#services' class='nav-field hover:text-textBlue hover:no-underline'>Services</a>
+          <a href='#blog' class='nav-field hover:text-textBlue hover:no-underline'>Blog</a>
+          <a href='#contact' class='nav-field hover:text-textBlue hover:no-underline'>Contact</a>
+        </div>
+      </div>
+  
+    </div>
+  </header><section id='home' class='hero bg-darkBlue'>
+  <div class='container mx-auto px-5'>
+    <div class='flex flex-col items-center md:flex md:flex-row md:justify-between pt-11 lg:pt-32 lg:pb:44'>
+
+      <div class='text-left md:w-11/12 lg:w-8/12 xl:w-4/12 md:mb-24'>
+        <p class='text-base text-textWhite mb-2.5 lg-mb-3'>We are creative team.</p>
+        <h1 class='text-textWhite text-3xl font-bold lg:text-5xl'>The best way to promote business</h1>
+        <p class='text-sm lg:text-base text-textHero mt-4 mb-12 lg:mt-5 lg:mb-10'>There are many variations of passages
+          of Lorem Ipsum available, but the majority have suffered.</p>
+
+        <div class='flex flex-col items-start md:flex-row md:items-center gap-6 lg:mt-3'>
+          <button
+            class='text-xs text-textWhite bg-textBlue rounded-[31px] py-2.5 px-5 lg:text-sm hover:bg-lightBlue'
+            href='#'
+          >Discover More</button>
+          <div class='flex items-center gap-2 hover:outline hover:outline-2 outline-white outline-offset-4 rounded'>
+            <button class='text-xs text-textWhite lg:text-sm' href='#'>Explore Services</button>
+            <i class='icon icon-arrow-right bg-textWhite w-5 h-5'></i>
+          </div>
+        </div>
+      </div>
+      <div class='mb-9 mt-14 pt-15 md:hidden'>
+        <img src='./img/heroMobile.png' alt='Hero Image' />
+      </div>
+
+      <div class='hidden md:block log: pt-15'>
+        <img src='./img/heroImage.png' alt='Hero Image' />
+      </div>
+
+    </div>
+  </div>
+</section><section id='about-us' class='why-choose-us overflow-hidden'>
+  <div class='container mx-auto px-5'>
+    <div class='my-20 flex flex-col items-center gap-12 lg:my-32 lg:flex-row lg:gap-24'>
+
+      <div class='lg:w-1/2 grid grid-cols-2 gap-4 lg:gap-8'>
+        <div class='row-start-1 row-end-3 col-start-1 col-end-2'>
+          <img class='h-full object-cover rounded-lg' src='./img/MakeYourCustomersHappy1.png' alt='This is a picture' />
+        </div>
+        <div class='row-start-2 row-end-4 col-start-2 col-end-3 relative'>
+          <img class='w-full object-cover z-20' src='./img/MakeYourCustomersHappy2.jpg' alt='This is a picture' />
+          <div class='absolute -z-10 -right-[10%] -bottom-6'><img
+              src='./img/Dotted_Shape.svg'
+              alt='This is a picture'
+            />
+          </div>
+        </div>
+        <div class='row-start-3 row-end-5 col-start-1 col-end-2 rounded-sm'>
+          <img class='h-full object-cover rounded-xl' src='./img/MakeYourCustomersHappy3.png' alt='This is a picture' />
+        </div>
+      </div>
+
+      <div class='lg:w-1/2'>
+        <p class='text-textBlue font-semibold text-lg'>Why choose Us</p>
+        <h2 class='text-darkGrey font-bold text-4xl mt-2.5 mb-5 lg:mt-3 lg:mb-3'>Make Your Customers Happy By Giving
+          Services</h2>
+        <p class='text-textLightGrey text-base my-5 lg:my-7'>It is a long established fact that a reader will be
+          distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+          that it has a more-or-less.</p>
+        <p class='text-textLightGrey text-base mb-10 lg:mb-12'>A domain name is one of the first steps to establishing
+          your brand. Secure a consistent brand image with a domain name that matches your business.</p>
+        <button
+          class='text-textWhite font-medium text-xs py-[16px] px-[38px] bg-textBlue rounded-md hover:bg-lightBlue'
+          href='#'
+          alt='Get started'
+        >Get Started</button>
+      </div>
+
+    </div>
+  </div>
+</section><section id='services' class='about-our-app'>
+  <div class='container mx-auto px-5'>
+    <div class='my-36 flex flex-col items-center gap-16 lg:flex-row lg:gap-44 lg:my-44'>
+
+      <div class='lg:w-1/2'>
+        <p class='text-textBlue font-semibold text-lg'>About Our App</p>
+        <h2 class='text-darkGrey font-bold text-4xl mt-2.5 mb-5 md:mt-3.5 md:mb-16'>A new way to manage your online
+          money.</h2>
+
+        <div class='flex flex-col gap-9 md:grid md:grid-rows-2 md:grid-cols-2 md:gap-x-16 md:gap-y-10'>
+          <div class='first'>
+            <img class='mb-5 md:mb-6' src='./img/SecurityMaintenance.svg' alt='security' />
+            <h3 class='text-xl font-semibold text-darkerGrey mb-3'>Security Maintenance</h3>
+            <p class='text-text-base text-textLightGrey'>The little rotter bevvy I gormless mush golly gosh cras.</p>
+          </div>
+
+          <div class='first'>
+            <img class='mb-5 md:mb-6' src='./img/BackupDatabase.svg' alt='backup' />
+            <h3 class='text-xl font-semibold text-darkerGrey mb-3'>Backup Database</h3>
+            <p class='text-text-base text-textLightGrey'>The little rotter bevvy I gormless mush golly gosh cras.</p>
+          </div>
+
+          <div class='first'>
+            <img class='mb-5 md:mb-6' src='./img/ServerMaintenance.svg' alt='server' />
+            <h3 class='text-xl font-semibold text-darkerGrey mb-3'>Server Maintenance</h3>
+            <p class='text-text-base text-textLightGrey'>The little rotter bevvy I gormless mush golly gosh cras.</p>
+          </div>
+
+          <div class='first'>
+            <img class='mb-5 md:mb-6' src='./img/NoRiskProtectable.svg' alt='risk' />
+            <h3 class='text-xl font-semibold text-darkerGrey mb-3'>No Risk Protectable</h3>
+            <p class='text-text-base text-textLightGrey'>The little rotter bevvy I gormless mush golly gosh cras.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class='lg:w-1/2'>
+        <div class='w-[215px] lg:w-[332px]'>
+          <img class='w-full' src='./img/mobilePhone.png' alt='phone' />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><section class='get-started relative bg-darkBlue lg:bg-transparent lg:static overflow-hidden'>
+  <div class='container mx-auto px-5'>
+    <div
+      class='lg:relative bg-darkBlue rounded lg:px-16 py-16 flex flex-col overflow-hidden lg:flex-row lg:justify-between lg:items-center'
+    >
+
+      <div class='text z-10'>
+        <p class='text-textWhite text-sm font-semibold'>Find Your Next Dream App</p>
+        <h2 class='text-textWhite text-4xl font-bold my-4'>Get started with <br />our free trial</h2>
+      </div>
+
+      <div class='flex flex-col gap-4 z-10 mt-2 md:flex-row md:gap-3'>
+        <button
+          class='text-textWhite text-sm font-semibold px-7 py-4 bg-greyOpacity rounded w-fit hover:bg-lightGrey'
+          href='#'
+          alt='pro version'
+        >Get Pro Version</button>
+        <button
+          class='text-textWhite text-sm font-semibold px-7 py-4 bg-textBlue rounded w-fit hover:bg-lightBlue'
+          href='#'
+          alt='free trial'
+        >Start Free Trial</button>
+      </div>
+
+      <img
+        src='./img/elipseGetStarted1.svg'
+        alt='elipse'
+        class='absolute w-[346px] bottom-[150px] left-[-220px] md:bottom-[90px] md:left-[-180px]'
+      />
+      <img
+        src='./img/elipseGetStarted2.svg'
+        alt='elipse'
+        class='hidden lg:block md:absolute md:w-[346px] md:top-[50px] md:right-[-100px]'
+      />
+    </div>
+  </div>
+</section><section id='blog' class='about-our-app'>
+  <div class='container mx-auto px-5'>
+
+    <div class='my-48 flex flex-col md:block'>
+
+      <div class='w-full sm:w-10/12 md:w-9/12 lg:w-5/12 text-center mx-auto'>
+        <p class='text-textBlue font-semibold text-lg'>Our Portfolio</p>
+        <h2 class='text-darkGrey font-bold text-4xl my-3'>Our Recent Projects</h2>
+        <p class='text-textLightGrey text-base my-2 lg:my-4'>There are many variations of passages of Lorem Ipsum
+          available but the majority have suffered alteration in some form.</p>
+      </div>
+
+      <div class='filter-buttons my-14 flex md:justify-center overflow-x-scroll md:overflow-visible'>
+        <button
+          id='all-projects'
+          class='text-textLightGrey font-semibold text-text-base py-3 px-9 rounded-lg hover:text-textWhite hover:bg-textBlue'
+          data-id='all'
+        >All Projects</button>
+        <button
+          class='filters text-textLightGrey font-semibold text-text-base py-3 px-9 rounded-lg hover:text-textWhite hover:bg-textBlue'
+          data-id='branding'
+        >Branding</button>
+        <button
+          class='filters text-textLightGrey font-semibold text-text-base py-3 px-9 rounded-lg hover:text-textWhite hover:bg-textBlue'
+          data-id='design'
+        >Design</button>
+        <button
+          class='filters text-textLightGrey font-semibold text-text-base py-3 px-9 rounded-lg hover:text-textWhite hover:bg-textBlue'
+          data-id='marketing'
+        >Marketing</button>
+        <button
+          data-id='development'
+          class='filters text-textLightGrey font-semibold text-text-base py-3 px-9 rounded-lg hover:text-textWhite hover:bg-textBlue'
+        >Development</button>
+      </div>
+
+      <div
+        class='cards projects-container flex flex-col gap-y-10 md:grid md:grid-rows-3 md:grid-cols-2 md:gap-x-7 md:gap-y-12 lg:grid-rows-2 lg:grid-cols-3 lg:gap-x-7'
+      >
+
+
+      </div>
+
+    </div>
+  </div>
+</section><section id='contact' class='contact'>
+  <div class='container mx-auto px-5'>
+
+    <div class='my-28 flex flex-col gap-6 justify-center lg:flex-row lg:gap-32'>
+
+      <div class='flex flex-col items-center'>
+        <div class='w-[70px] lg:w-[130px]'>
+          <img class='w-full' src='./img/Email.svg' alt='email' /></div>
+        <p class='text-lg font-semibold text-black mt-4 mb-3'>Email Address</p>
+        <p class='text-textLightGrey mb-1.5'>info@example.com</p>
+        <p class='text-textLightGrey'>support@example.com</p>
+      </div>
+
+      <div class='flex flex-col items-center'>
+        <div class='w-[70px] lg:w-[130px]'>
+          <img class='w-full' src='./img/Phone.svg' alt='phone' />
+        </div>
+        <p class='text-lg font-semibold text-black mt-4 mb-3'>Phone Number</p>
+        <p class='text-textLightGrey mb-1.5'>+88 (800) 123 4567</p>
+        <p class='text-textLightGrey'>+99 094 5445 433</p>
+      </div>
+
+      <div class='flex flex-col items-center'>
+        <div class='w-[70px] lg:w-[130px]'>
+          <img class='w-full' src='./img/Location.svg' alt='address' />
+        </div>
+        <p class='text-lg font-semibold text-black mt-4 mb-3'>Our Address</p>
+        <p class='text-textLightGrey mb-1.5'>82 12th Street, Office 14,</p>
+        <p class='text-textLightGrey'>"Edinburgh, UK</p>
+      </div>
+
+    </div>
+  </div>
+</section><section class='contact-us-form bg-backgroundGrey'>
+  <div class='container mx-auto px-5'>
+    <div class='py-32'>
+
+      <div class='w-full sm:w-10/12 md:w-9/12 lg:w-5/12 text-center mx-auto'>
+        <p class='text-textBlue font-semibold text-lg'>Contact Us</p>
+        <h2 class='text-darkGrey font-bold text-4xl'>How Can We Help You?</h2>
+        <p class='text-textLightGrey text-base my-3'>There are many variations of passages of Lorem Ipsum available but
+          the majority have suffered alteration in some form.</p>
+      </div>
+
+      <form class='mt-16'>
+        <div class='lg:flex gap-8'>
+          <div class='mb-10 lg:mb-4 w-full'>
+            <label for='name' class='block text-base text-darkerGrey font-semibold'>Your Name
+              <span class='text-red'>*</span></label>
+            <input
+              type='text'
+              id='name'
+              name='name'
+              class='form-input mt-3 py-3 border border-border rounded block w-full'
+            />
+          </div>
+          <div class='mb-10 lg:mb-4 w-full'>
+            <label for='email' class='block text-base text-darkerGrey font-semibold'>Your Email
+              <span class='text-red'>*</span></label>
+            <input
+              type='email'
+              id='email'
+              name='email'
+              class='form-input mt-3 py-3 border border-border rounded block w-full'
+            />
+          </div>
+        </div>
+
+        <div class='my-4'>
+          <label for='message' class='block text-base text-darkerGrey font-semibold'>Message
+            <span class='text-red'>*</span></label>
+          <textarea
+            id='message'
+            name='message'
+            rows='6'
+            class='form-textarea mt-3 border border-border rounded block w-full'
+          ></textarea>
+        </div>
+
+        <div class='flex items-center mt-9 mb-16'>
+          <input
+            type='checkbox'
+            id='checkboxField'
+            name='checkboxField'
+            class='form-checkbox h-3 w-3 text-indigo-600 transition duration-150 ease-in-out'
+          />
+          <label for='checkboxField' class='ml-2 text-sm text-textLightGrey'>I agree that my submitted data is being
+            collected and stored.</label>
+        </div>
+
+        <div class='lg:flex lg:justify-center'>
+          <button
+            type='submit'
+            class='bg-textBlue w-full text-sm text-textWhite py-4 px-30 rounded lg:w-4/12 xl:w-3/12 hover:bg-lightBlue'
+          >Send Message</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section><footer>
+  <div class='container mx-auto px-5'>
+    <div class='mt-24 mb-72 md:relative flex flex-col gap-10 lg:flex-row lg:gap-2'>
+
+      <div class='flex flex-col gap-5 lg:w-2/6 lg:pr-6'>
+        <img class='w-4/12' src='./img/logo_positive.svg' alt='logo' />
+        <p class='text-sm text-textLightGrey hover:text-textBlue w-9/12 lg:w-full'>Sed ut perspiciatis undmnis is iste
+          natus error sit amet voluptatem totam rem aperiam.
+        </p>
+        <p class='text-sm text-darkGrey font-semibold flex'>
+          <i class='icon icon-phone text-base bg-textBlue w-5 h-5'></i>
+          &nbsp; +012 (345) 678 99</p>
+      </div>
+
+      <div class='flex flex-col gap-3 lg:w-1/6'>
+        <p class='text-lg font-semibold text-darkerGrey mb-6'>Resources</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Saas Development</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Our Products</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Our Products</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>User Strategy</p>
+      </div>
+
+      <div class='flex flex-col gap-3 lg:w-1/6'>
+        <p class='text-lg font-semibold text-arkerGrey mb-6'>Company</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>About Landio</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Contact &amp; Support</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Success History</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Setting &amp; Privacy</p>
+      </div>
+
+      <div class='flex flex-col gap-3 lg:w-1/6'>
+        <p class='text-lg font-semibold text-darkerGrey mb-6'>Quick Links</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Premium Support</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Our Services</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Know Our Team</p>
+        <p class='text-sm text-textLightGrey hover:text-textBlue'>Download App</p>
+      </div>
+
+      <div class='flex flex-col gap-3 lg:w-1/6'>
+        <p class='text-lg font-semibold text-darkerGrey mb-6'>Follow Us On</p>
+        <div class='icons'>
+          <i class='icon icon-facebook text-base bg-textBlue w-6 h-6 cursor-pointer hover:bg-textLightGrey'></i>
+          <i
+            class='icon icon-twitter text-base bg-darkGrey text-icons w-6 h-6 cursor-pointer hover:bg-textLightGrey'
+          ></i>
+          <i class='icon icon-youtube text-base bg-darkGrey w-6 h-6 cursor-pointer hover:bg-textLightGrey'></i>
+          <i class='icon icon-instagram text-base bg-darkGrey w-6 h-6 cursor-pointer hover:bg-textLightGrey'></i>
+
+        </div>
+        <p class='text-sm text-textLightGrey'>© <span class="footer-date">2024</span> TailGrids.</p>
+      </div>
+
+      <img
+        src='./img/EllipseFooter.svg'
+        alt='elipse'
+        class='hidden md:block md:absolute md:bottom-[-150px] md:left-[-250px] md:h-[350px] md:w-[350px]'
+      />
+
+    </div>
+  </div>
+</footer>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
